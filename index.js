@@ -22,12 +22,14 @@ mongoose
 const logger = require("./middleware/logger");
 const helmet = require("helmet");
 const morgan = require("morgan");
+const compression = require("compression");
 
 const app = express();
 
 app.use(express.json());
 app.use(logger);
 app.use(helmet());
+app.use(compression());
 
 if (app.get("env") === "development") {
   app.use(morgan("tiny"));
