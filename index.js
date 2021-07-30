@@ -8,11 +8,11 @@ const rentals = require("./routes/rentals");
 const user = require("./routes/user");
 const auth = require("./routes/auth");
 const home = require("./routes/home");
-
+const config = require("config")
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost/vidlyProject", {
+  .connect(config.get("db"), {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

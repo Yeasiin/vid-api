@@ -1,4 +1,4 @@
 {
-  "name": "My Express App Default Settings",
-  "jwtToken": "jwtPrivateKey"
+  "jwtToken": "jwtPrivateKey",
+  "db": "mongodb://localhost/vidlyProject"
 }

@@ -2,5 +2,6 @@
   "mail": {
     "password": "APP_PASSWORD"
   },
-  "jwtToken": "jwtPrivateKey"
+  "jwtToken": "jwtPrivateKey",
+  "db": "app_db"
 }
